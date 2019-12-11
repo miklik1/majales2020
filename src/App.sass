@@ -1,45 +1,60 @@
 @font-face
   font-family: 'Rustico'
-  src: url('rustico.ttf')
+  src: url('./fonts/rustico.ttf')
+
+@font-face
+  font-family: 'Subscribe'
+  src: url('./fonts/subscribe.otf')
+
 
 .App 
   text-align: center
   text-transform: uppercase
-  font-family: Rustico
+  font-family: Subscribe
 
   .landing
     background-color: #F2E6D6
-
     .App-logo 
-      height: 25vmin
-      margin: 3vmin
+      width: 40vmin
+      margin: 6vmin
       position: absolute
       top: 0
       left: 0
+      right: 0
+
+      @media (min-width: 1050px)
+        margin-left: auto
+        margin-right: auto
 
     nav
       display: flex
       flex-direction: row
       align-items: center
       justify-content: flex-end
-      color: #0D1433
+      color: black
       height: 25vmin
+      padding: 0.5em
 
       a
-        font-weight: bold
         color: #0D1433
         text-decoration: none
-        margin-right: 3vmin
-        font-size: calc(2vmin + 10px)
+        margin-right: 0.5em
+        font-size: calc(4vmin + 12px)
 
       .hidden
         display: none
+        @media (min-width: 600px)
+          display: inline-block
 
     .uvodniText
-      font-size: calc(3vmin + 10px)
+      font-size: calc(5vmin + 12px)
       color: #E52F57
-      font-weight: bold
       padding: 5vmin
+      margin-bottom: -10px
+      @media (min-width: 600px)
+        margin-bottom: -10px
+      @media (min-width: 1000px)
+        margin-bottom: -40px
 
     .seskupeni
       display: flex
@@ -47,41 +62,113 @@
       justify-content: center
       align-items: center
       position: relative
+      font-family: Rustico
+      overflow-y: hidden
 
-      p
-        z-index: 2
+      .text
         position: absolute
-        margin: 0
-        color: #7af48e
-        font-weight: bold
-        text-shadow: 5px 5px 5px black
-        font-size: calc(5vmin + 10px)
+        max-width: 100%
+        @media (min-width: 1300px)
+          max-width: 80%
 
       .datum
-        margin-top: 120px
-        font-size: calc(15vmin + 10px)
+        margin: 0px
+        font-size: calc(19vmin + 5px)
+        line-height: 0.1rem
 
       .people
         width: 100%
 
   .info
     background-color: #0D1433
-    height: 100vh
+    padding: 10px
+    padding-top: 50px
+    position: relative
+
+    .font
+      font-family: Rustico
+      font-size: calc(3vmin + 12px)
 
     p
-      padding: 25px
-      padding-top: 50px
-      font-size: 25px
-      margin: 0
-      color: white
-      font-weight: bold
+      margin-top: 0
+      font-size: calc(2vmin + 12px)
+      margin-bottom: 40px
+      color: #BFB7AF
 
-    .cisla
-      padding: 25px
-      padding-top: 50px
-      font-size: 25px
-      margin: 0
-      color: white
-      font-weight: bold
+    .flexNaDruhou
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: center
+
+      .sekce1, .sekce2
+        padding: 1em
+
+      .sekce1
+        @media (min-width: 1300px)
+          margin-bottom: 20%
+
+      .cisla
+        font-size: calc(15vmin + 12px)
+        margin: 0
+        color: white
+        font-family: Rustico
+
+      .odsazeni
+        margin-bottom: 5rem
+        @media (min-width: 500px)
+          margin-bottom: 10rem
+        @media (min-width: 800px)
+          margin-bottom: 15rem
+        @media (min-width: 1200px)
+          margin-bottom: 20rem
+        @media (min-width: 1500px)
+          margin-bottom: 25rem
+        @media (min-width: 1800px)
+          margin-bottom: 30rem
 
 
+
+    .krivka
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      margin-bottom: -1px
+      margin-top: 1rem
+
+  .kontakty
+    background-color: #3F031D
+    padding: 20px
+
+    h2
+      color: #F12551
+      font-size: calc(8vmin + 12px)
+      font-family: Rustico
+      font-weight: normal
+      margin-top: -2rem
+      @media (min-width: 800px)
+        margin-top: -3rem
+
+
+    .flex
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: center
+      font-weight: normal
+
+
+      .kontakt
+        margin: 1em
+
+        h2
+          font-weight: normal
+
+        p
+          font-size: calc(1.3vmin + 17px)
+          margin: 7px
+
+    img
+      width: 40vmin
