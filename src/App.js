@@ -36,7 +36,8 @@ function App() {
                     <a href="#kontakty">Kontakt</a>
             </Link>
         </nav>
-        <p className="uvodniText">Kompletní web pro vás teprve připravujeme, zatím si připomeneme, jaký byl největší zlínský open-air roku 2019</p>
+        <p className="uvodniText">Kompletní web pro vás teprve připravujeme, zatím si připomeneme, <br />
+                                  jaký byl největší zlínský open-air roku 2019</p>
         <div className="seskupeni">
           <img src={text} className="text" alt="text" />
           <img src={people} className="people" alt="people" />
@@ -68,10 +69,12 @@ function App() {
       <h2>Kontakty</h2>
         <div className="flex">
           <div className="kontakt">
+          <p style={{color: '#BFB7AF'}}>Kapely</p>
             <p style={{color: 'white'}}>Leona Vyhnálková</p>
             <p style={{color: '#F12551'}}>l_vyhnalkova@utb.cz</p>
           </div>
           <div className="kontakt">
+            <p style={{color: '#BFB7AF'}}>technické záležitosti</p>
             <p style={{color: 'white'}}>Radim Majda</p>
             <p style={{color: '#F12551'}}>majda@sutb.cz</p>
           </div>
