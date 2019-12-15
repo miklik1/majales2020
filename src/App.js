@@ -68,6 +68,12 @@ function App() {
       <section className="kontakty" id="kontakty">
       <h2>Kontakty</h2>
         <div className="flex">
+        <div className="kontakt">
+          <p style={{color: '#BFB7AF'}}>manažer</p>
+            <p style={{color: 'white'}}>Adam Utíkal</p>
+            <p style={{color: '#F12551'}}>utikal@sutb.cz</p>
+            <p style={{color: '#F12551'}}>+420 773 238 792</p>
+          </div>
           <div className="kontakt">
           <p style={{color: '#BFB7AF'}}>Kapely</p>
             <p style={{color: 'white'}}>Leona Vyhnálková</p>
